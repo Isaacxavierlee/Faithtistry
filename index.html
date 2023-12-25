@@ -1,644 +1,728 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Faithtistry Lash Webpage" />
+    <meta name="keywords" content="lashes, beauty, luxury" />
+    <meta name="author" content="Faithtistry Lash" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Faithtistry Lash Webpage" />
-  <meta name="keywords" content="lashes, beauty, luxury" />
-  <meta name="author" content="Faithtistry Lash" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
-  <link href="./style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@300&display=swap"
-    rel="stylesheet" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/your-fontawesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <script defer src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
-   <script src="https://www.google.com/recaptcha/api.js"></script>
-  
-  <title>Faithtistry Lash Webpage</title>
-</head>
+    <title>Faithtistry Lash Webpage</title>
+  </head>
 
-<body>
-  <!-- Header section starts -->
-  <header>
-    <!-- Corrected the placement of the label tag -->
-    <label for="toggler" class="fas fa-bars"></label>
+  <body>
+    <!-- Header section starts -->
+    <header>
+      <!-- Corrected the placement of the label tag -->
+      <label for="toggler" class="fas fa-bars"></label>
 
-    <input type="checkbox" name="" id="toggler" />
+      <input type="checkbox" name="" id="toggler" />
 
-    <a href="#" class="logo">Faithtistry<span>.</span></a>
+      <a href="#" class="logo">Faithtistry<span>.</span></a>
 
-    <nav class="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="#review">Review</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <!-- Update the user icon -->
-    <div class="icons">
-      <a href="#" class="fas fa-heart"></a>
-      <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
-      <span class="cart-count">0</span>
-      <a href="login.php" class="fas fa-user"></a>
-    </div>
-
-    <!-- Cart Menu -->
-    <div class="cart-menu" id="cart-menu">
-      <div class="cart-header">
-        <h3>Shopping Cart</h3>
-        <button class="close-cart" id="close-cart">&times;</button>
-      </div>
-      <ul class="cart-items" id="cart-items">
-        <!-- Cart items will be dynamically added here -->
-      </ul>
-
-      <!-- Social Media Icons -->
-      <div class="social-icons">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <!-- Add more social media icons as needed -->
-      </div>
-    </div>
-  </header>
-
-  <section class="home" id="home">
-    <div class="content">
-      <h3>Faithtistry</h3>
-      <span>Where Luxury Meets Lashes</span>
-      <p>
-        Welcome to Faithtistry, where luxury meets lashes take center stage.
-        Our lash collection is meticulously crafted to enhance your natural
-        beauty, offering a diverse range of styles to suit every personality
-        and occasion.
-      </p>
-      <a href="#" class="btn">Book Now</a>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <h1 class="heading"><span>About</span> Us</h1>
-
-    <div class="row">
-      <div class="video-container">
-        <!-- Use the correct video path -->
-        <video src="./videos/lashes.mp4" loop autoplay muted controls></video>
-        <h3>Best Selling Lash</h3>
+      <!-- Update the user icon -->
+      <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
+        <span class="cart-count">0</span>
+        <a href="login.php" class="fas fa-user"></a>
       </div>
 
+      <!-- Cart Menu -->
+      <div class="cart-menu" id="cart-menu">
+        <div class="cart-header">
+          <h3>Shopping Cart</h3>
+          <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <ul class="cart-items" id="cart-items">
+          <!-- Cart items will be dynamically added here -->
+        </ul>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <!-- Add more social media icons as needed -->
+        </div>
+      </div>
+    </header>
+
+    <section class="home" id="home">
       <div class="content">
-        <h3>Why Choose Us</h3>
+        <h3>Faithtistry</h3>
+        <span>Where Luxury Meets Lashes</span>
         <p>
-          <strong>Unmatched Quality:</strong> We are committed to delivering
-          lashes of unparalleled quality, meticulously crafted to perfection.
-          Our lashes are made from premium materials to ensure durability,
-          comfort, and a natural look.
+          Welcome to Faithtistry, where luxury meets lashes take center stage.
+          Our lash collection is meticulously crafted to enhance your natural
+          beauty, offering a diverse range of styles to suit every personality
+          and occasion.
         </p>
-        <p>
-          <strong>Diverse Styles:</strong> Embrace versatility with our
-          extensive range of lash styles. From subtle and natural to bold and
-          glamorous, we cater to every taste and occasion. Find the perfect
-          lashes to complement your unique style.
-        </p>
-        <a href="./videos/lashes.mp4" class="btn">Learn More</a>
+        <a href="#" class="btn">Book Now</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="icons-container">
-    <div class="icons">
-      <img src="./images/payment.png" alt="" />
-      <div class="info">
-        <h3>Secure Payment</h3>
-        <span>Protected by PayPal</span>
+    <section class="about" id="about">
+      <h1 class="heading"><span>About</span> Us</h1>
+
+      <div class="row">
+        <div class="video-container">
+          <!-- Use the correct video path -->
+          <video src="./videos/lashes.mp4" loop autoplay muted controls></video>
+          <h3>Best Selling Lash</h3>
+        </div>
+
+        <div class="content">
+          <h3>Why Choose Us</h3>
+          <p>
+            <strong>Unmatched Quality:</strong> We are committed to delivering
+            lashes of unparalleled quality, meticulously crafted to perfection.
+            Our lashes are made from premium materials to ensure durability,
+            comfort, and a natural look.
+          </p>
+          <p>
+            <strong>Diverse Styles:</strong> Embrace versatility with our
+            extensive range of lash styles. From subtle and natural to bold and
+            glamorous, we cater to every taste and occasion. Find the perfect
+            lashes to complement your unique style.
+          </p>
+          <a href="./videos/lashes.mp4" class="btn">Learn More</a>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="icons">
-      <img src="./images/shipped.png" alt="" />
-      <div class="info">
-        <h3>Free Delivery</h3>
-        <span>On All Lashes Orders</span>
+    <section class="icons-container">
+      <div class="icons">
+        <img src="./images/payment.png" alt="" />
+        <div class="info">
+          <h3>Secure Payment</h3>
+          <span>Protected by PayPal</span>
+        </div>
       </div>
-    </div>
 
-    <div class="icons">
-      <img src="./images/refund.png" alt="" />
-      <div class="info">
-        <h3>10 days return</h3>
-        <span>Money Guarantee</span>
+      <div class="icons">
+        <img src="./images/shipped.png" alt="" />
+        <div class="info">
+          <h3>Free Delivery</h3>
+          <span>On All Lashes Orders</span>
+        </div>
       </div>
-    </div>
 
-    <div class="icons">
-      <img src="./images/membership-card.png" alt="" />
-      <div class="info">
-        <h3>Offers & Gifts</h3>
-        <span>Membership</span>
+      <div class="icons">
+        <img src="./images/refund.png" alt="" />
+        <div class="info">
+          <h3>10 days return</h3>
+          <span>Money Guarantee</span>
+        </div>
       </div>
-    </div>
 
-    <div class="icons">
-      <img src="./images/discount.png" alt="" />
-      <div class="info">
-        <h3>Exclusive Discounts</h3>
-        <span>Save more with our special offers</span>
+      <div class="icons">
+        <img src="./images/membership-card.png" alt="" />
+        <div class="info">
+          <h3>Offers & Gifts</h3>
+          <span>Membership</span>
+        </div>
       </div>
-    </div>
 
-    <div class="icons">
-      <img src="./images/customer-service.png" alt="" />
-      <div class="info">
-        <h3>24/7 Customer Support</h3>
-        <span>Assistance whenever you need it</span>
+      <div class="icons">
+        <img src="./images/discount.png" alt="" />
+        <div class="info">
+          <h3>Exclusive Discounts</h3>
+          <span>Save more with our special offers</span>
+        </div>
       </div>
-    </div>
 
-    <div class="icons">
-      <img src="./images/premium.png" alt="" />
-      <div class="info">
-        <h3>Premium Quality</h3>
-        <span>Experience the best with our high-quality products</span>
+      <div class="icons">
+        <img src="./images/customer-service.png" alt="" />
+        <div class="info">
+          <h3>24/7 Customer Support</h3>
+          <span>Assistance whenever you need it</span>
+        </div>
       </div>
-    </div>
 
-    <div class="icons">
-      <img src="./images/gift-box.png" alt="" />
-      <div class="info">
-        <h3>Gift Wrapping Option</h3>
-        <span>Make your purchase extra special with our gift wrapping
-          service</span>
+      <div class="icons">
+        <img src="./images/premium.png" alt="" />
+        <div class="info">
+          <h3>Premium Quality</h3>
+          <span>Experience the best with our high-quality products</span>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <section class="products" id="products">
-    <h1 class="heading">Latest <span>Lashes</span></h1>
+      <div class="icons">
+        <img src="./images/gift-box.png" alt="" />
+        <div class="info">
+          <h3>Gift Wrapping Option</h3>
+          <span
+            >Make your purchase extra special with our gift wrapping
+            service</span
+          >
+        </div>
+      </div>
+    </section>
 
-    <div class="box-container">
-      <!-- Product 1 -->
-      <div class="box" data-product-name="4Dimensional Lashes">
-        <span class="discount">10%</span>
-        <div class="image">
-          <img src="./images/4D_lash.jpg" alt="" />
-          <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="cart-btn">Add to Cart</a>
-            <a href="#" class="fas fa-eye"></a>
+    <section class="products" id="products">
+      <h1 class="heading">Latest <span>Lashes</span></h1>
+
+      <div class="box-container">
+        <!-- Product 1 -->
+        <div class="box" data-product-name="4Dimensional Lashes">
+          <span class="discount">10%</span>
+          <div class="image">
+            <img src="./images/4D_lash.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">Add to Cart</a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>4Dimensional Lashes</h3>
+            <div class="price"><span class="price">$25.00</span>.$20.00</div>
           </div>
         </div>
-        <div class="content">
-          <h3>4Dimensional Lashes</h3>
-          <div class="price"><span class="price">$25.00</span>.$20.00</div>
-        </div>
-      </div>
 
-      <!-- Product 2 -->
-      <div class="box" data-product-name="Classic Lashes">
-        <span class="discount">10%</span>
-        <div class="image">
-          <img src="./images/classic_lash.jpg" alt="" />
-          <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="cart-btn">Add to Cart</a>
-            <a href="#" class="fas fa-eye"></a>
+        <!-- Product 2 -->
+        <div class="box" data-product-name="Classic Lashes">
+          <span class="discount">10%</span>
+          <div class="image">
+            <img src="./images/classic_lash.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">Add to Cart</a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Classic Lashes</h3>
+            <div class="price"><span class="price">$25.00</span>.$20.00</div>
           </div>
         </div>
-        <div class="content">
-          <h3>Classic Lashes</h3>
-          <div class="price"><span class="price">$25.00</span>.$20.00</div>
-        </div>
-      </div>
 
-      <!-- Product 3 -->
-      <div class="box" data-product-name="Volume Lashes">
-        <span class="discount">10%</span>
-        <div class="image">
-          <img src="./images/volume_lash.jpg" alt="" />
-          <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="cart-btn">Add to Cart</a>
-            <a href="#" class="fas fa-eye"></a>
+        <!-- Product 3 -->
+        <div class="box" data-product-name="Volume Lashes">
+          <span class="discount">10%</span>
+          <div class="image">
+            <img src="./images/volume_lash.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">Add to Cart</a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Volume Lashes</h3>
+            <div class="price"><span class="price">$25.00</span>.$20.00</div>
           </div>
         </div>
-        <div class="content">
-          <h3>Volume Lashes</h3>
-          <div class="price"><span class="price">$25.00</span>.$20.00</div>
-        </div>
-      </div>
 
-      <!-- Continue adding similar blocks for other products -->
+        <!-- Continue adding similar blocks for other products -->
 
-      <!-- Product 4 -->
-      <div class="box" data-product-name="Hybrid Lashes">
-        <span class="discount">10%</span>
-        <div class="image">
-          <img src="./images/hybrid_lash.jpg" alt="" />
-          <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="cart-btn">Add to Cart</a>
-            <a href="#" class="fas fa-eye"></a>
+        <!-- Product 4 -->
+        <div class="box" data-product-name="Hybrid Lashes">
+          <span class="discount">10%</span>
+          <div class="image">
+            <img src="./images/hybrid_lash.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">Add to Cart</a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Hybrid Lashes</h3>
+            <div class="price"><span class="price">$25.00</span>.$20.00</div>
           </div>
         </div>
-        <div class="content">
-          <h3>Hybrid Lashes</h3>
-          <div class="price"><span class="price">$25.00</span>.$20.00</div>
-        </div>
-      </div>
 
-      <!-- Product 5 -->
-      <div class="box" data-product-name="Lash Lift & Tint">
-        <span class="discount">10%</span>
-        <div class="image">
-          <img src="./images/lash_lift.jpg" alt="" />
-          <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="cart-btn">Add to Cart</a>
-            <a href="#" class="fas fa-eye"></a>
+        <!-- Product 5 -->
+        <div class="box" data-product-name="Lash Lift & Tint">
+          <span class="discount">10%</span>
+          <div class="image">
+            <img src="./images/lash_lift.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">Add to Cart</a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Lash Lift & Tint</h3>
+            <div class="price"><span class="price">$25.00</span>.$20.00</div>
           </div>
         </div>
-        <div class="content">
-          <h3>Lash Lift & Tint</h3>
-          <div class="price"><span class="price">$25.00</span>.$20.00</div>
-        </div>
-      </div>
 
-      <!-- Product 6 -->
-      <div class="box" data-product-name="Mega Volume Lashes">
-        <span class="discount">10%</span>
-        <div class="image">
-          <img src="./images/megavolume_lash.jpg" alt="" />
-          <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="cart-btn">Add to Cart</a>
-            <a href="#" class="fas fa-eye"></a>
+        <!-- Product 6 -->
+        <div class="box" data-product-name="Mega Volume Lashes">
+          <span class="discount">10%</span>
+          <div class="image">
+            <img src="./images/megavolume_lash.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">Add to Cart</a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Mega Volume Lashes</h3>
+            <div class="price"><span class="price">$25.00</span>.$20.00</div>
           </div>
         </div>
-        <div class="content">
-          <h3>Mega Volume Lashes</h3>
-          <div class="price"><span class="price">$25.00</span>.$20.00</div>
-        </div>
-      </div>
 
-      <!-- Product 7 -->
-      <div class="box" data-product-name="Colored Lashes">
-        <span class="discount">10%</span>
-        <div class="image">
-          <img src="./images/colored.png" alt="" />
-          <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="cart-btn">Add to Cart</a>
-            <a href="#" class="fas fa-eye"></a>
+        <!-- Product 7 -->
+        <div class="box" data-product-name="Colored Lashes">
+          <span class="discount">10%</span>
+          <div class="image">
+            <img src="./images/colored.png" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">Add to Cart</a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Colored Lashes</h3>
+            <div class="price"><span class="price">$25.00</span>.$20.00</div>
           </div>
         </div>
-        <div class="content">
-          <h3>Colored Lashes</h3>
-          <div class="price"><span class="price">$25.00</span>.$20.00</div>
-        </div>
-      </div>
 
-      <!-- Product 8 -->
-      <div class="box" data-product-name="Bottom Lashes">
-        <span class="discount">10%</span>
-        <div class="image">
-          <img src="./images/bottom_lashes.jpg" alt="" />
-          <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="cart-btn">Add to Cart</a>
-            <a href="#" class="fas fa-eye"></a>
+        <!-- Product 8 -->
+        <div class="box" data-product-name="Bottom Lashes">
+          <span class="discount">10%</span>
+          <div class="image">
+            <img src="./images/bottom_lashes.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">Add to Cart</a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Bottom Lashes</h3>
+            <div class="price"><span class="price">$25.00</span>.$20.00</div>
           </div>
         </div>
-        <div class="content">
-          <h3>Bottom Lashes</h3>
-          <div class="price"><span class="price">$25.00</span>.$20.00</div>
-        </div>
-      </div>
 
-      <!-- Product 9 -->
-      <div class="box" data-product-name="Handmade Fans">
-        <span class="discount">10%</span>
-        <div class="image">
-          <img src="./images/premade_lash.jpg" alt="" />
-          <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="cart-btn">Add to Cart</a>
-            <a href="#" class="fas fa-eye"></a>
+        <!-- Product 9 -->
+        <div class="box" data-product-name="Handmade Fans">
+          <span class="discount">10%</span>
+          <div class="image">
+            <img src="./images/premade_lash.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="cart-btn">Add to Cart</a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Handmade Fans</h3>
+            <div class="price"><span class="price">$100.00</span>.$80.00</div>
           </div>
         </div>
-        <div class="content">
-          <h3>Handmade Fans</h3>
-          <div class="price"><span class="price">$100.00</span>.$80.00</div>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="review" id="review">
-    <h1 class="heading">Customer's <span> Review</span></h1>
+    <section class="review" id="review">
+      <h1 class="heading">Customer's <span> Review</span></h1>
 
-    <div class="box-container">
-      <div class="box">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
+      <div class="box-container">
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            "Faithtistry Lashes has truly elevated my lash game! The luxurious
+            quality and attention to detail are unmatched. I feel like a
+            glamorous queen every time I wear their lashes. The perfect blend of
+            style and comfort. Highly recommended!"
+          </p>
+          <div class="user">
+            <img src="./images/customer1.jpg" alt="" />
+            <h3>Sophia D</h3>
+            <span>Glamour Enthusiast</span>
+          </div>
         </div>
-        <p>
-          "Faithtistry Lashes has truly elevated my lash game! The luxurious
-          quality and attention to detail are unmatched. I feel like a
-          glamorous queen every time I wear their lashes. The perfect blend of
-          style and comfort. Highly recommended!"
-        </p>
-        <div class="user">
-          <img src="./images/customer1.jpg" alt="" />
-          <h3>Sophia D</h3>
-          <span>Glamour Enthusiast</span>
+        <span class="fas fa-quote-right"></span>
+
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            "As a makeup artist, I only trust the best for my clients, and
+            Faithtistry Lashes never disappoints. The craftsmanship of their
+            lashes is exceptional, adding that touch of luxury to every look.
+            The diverse range ensures there's a perfect lash for every style I
+            envision."
+          </p>
+          <div class="user">
+            <img src="./images/customer_2.jpg" alt="" />
+            <h3>Elijah M.</h3>
+            <span>Makeup Artist</span>
+          </div>
         </div>
+        <span class="fas fa-quote-right"></span>
+
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            "For my wedding day, I chose Faithtistry Lashes, and they were
+            absolutely perfect! The lashes were so comfortable, and they looked
+            stunning in photos. It's where luxury meets lashes, and I couldn't
+            have asked for anything better for my special day."
+          </p>
+          <div class="user">
+            <img src="./images/customer_3.jpg" alt="" />
+            <h3>Ava K.</h3>
+            <span>Wedding Day Ready</span>
+          </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            "Faithtistry Lashes has set a new standard for lash quality. The
+            attention to detail in their designs is evident, and the durability
+            of the lashes is impressive. These lashes are a must-have for anyone
+            who appreciates luxury in their beauty routine."
+          </p>
+          <div class="user">
+            <img src="./images/customer_4.jpg" alt="" />
+            <h3>Oliver P.</h3>
+            <span>Impressed by Quality</span>
+          </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            "I've found my go-to lashes with Faithtistry! The combination of
+            luxury and comfort is exactly what I was looking for. From casual
+            outings to special events, Faithtistry Lashes adds that touch of
+            elegance to my everyday look. I'm a customer for life!"
+          </p>
+          <div class="user">
+            <img src="./images/customer_5.jpg" alt="" />
+            <h3>Zara H.</h3>
+            <span>Glamour Enthusiast</span>
+          </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            "Faithtistry Lashes delivers on the luxury front with their
+            beautiful lashes, but I think there's an opportunity to elevate the
+            unboxing experience. A more luxurious packaging design could enhance
+            the overall brand image. The great thing is, Faithtistry has shown
+            they are receptive to suggestions, and I believe they'll continue to
+            refine every aspect of their brand."
+          </p>
+          <div class="user">
+            <img src="./images/customer_6.jpg" alt="" />
+            <h3>Mariah Low</h3>
+            <span>Glamour Enthusiast</span>
+          </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            "While Faithtistry Lashes already offers amazing products, I believe
+            there's room for more diversity in their lash styles. I'd love to
+            see them explore even bolder and trend-setting designs. I appreciate
+            that this brand is open to feedback and am confident they'll
+            continue to evolve and live up to their 'luxury meets lashes'
+            promise."
+          </p>
+          <div class="user">
+            <img src="./images/customer_7.jpg" alt="" />
+            <h3>Lisa R.</h3>
+            <span>Glamour Enthusiast</span>
+          </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            "I had a minor issue with my order, and the customer service
+            experience was not as seamless as I expected. However, what stood
+            out was how the Faithtistry team actively listened to my concerns
+            and promptly addressed the issue. It's evident they value customer
+            feedback and are committed to improving. Excited to see them uphold
+            their luxury standards in every aspect!"
+          </p>
+          <div class="user">
+            <img src="./images/customer_8.jpg" alt="" />
+            <h3>Jordan W.</h3>
+            <span>Glamour Enthusiast</span>
+          </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
       </div>
-      <span class="fas fa-quote-right"></span>
+    </section>
 
-      <div class="box">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-        <p>
-          "As a makeup artist, I only trust the best for my clients, and
-          Faithtistry Lashes never disappoints. The craftsmanship of their
-          lashes is exceptional, adding that touch of luxury to every look.
-          The diverse range ensures there's a perfect lash for every style I
-          envision."
-        </p>
-        <div class="user">
-          <img src="./images/customer_2.jpg" alt="" />
-          <h3>Elijah M.</h3>
-          <span>Makeup Artist</span>
-        </div>
-      </div>
-      <span class="fas fa-quote-right"></span>
-
-      <div class="box">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-        <p>
-          "For my wedding day, I chose Faithtistry Lashes, and they were
-          absolutely perfect! The lashes were so comfortable, and they looked
-          stunning in photos. It's where luxury meets lashes, and I couldn't
-          have asked for anything better for my special day."
-        </p>
-        <div class="user">
-          <img src="./images/customer_3.jpg" alt="" />
-          <h3>Ava K.</h3>
-          <span>Wedding Day Ready</span>
-        </div>
-      </div>
-      <span class="fas fa-quote-right"></span>
-
-      <div class="box">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-        <p>
-          "Faithtistry Lashes has set a new standard for lash quality. The
-          attention to detail in their designs is evident, and the durability
-          of the lashes is impressive. These lashes are a must-have for anyone
-          who appreciates luxury in their beauty routine."
-        </p>
-        <div class="user">
-          <img src="./images/customer_4.jpg" alt="" />
-          <h3>Oliver P.</h3>
-          <span>Impressed by Quality</span>
-        </div>
-      </div>
-      <span class="fas fa-quote-right"></span>
-
-      <div class="box">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-        <p>
-          "I've found my go-to lashes with Faithtistry! The combination of
-          luxury and comfort is exactly what I was looking for. From casual
-          outings to special events, Faithtistry Lashes adds that touch of
-          elegance to my everyday look. I'm a customer for life!"
-        </p>
-        <div class="user">
-          <img src="./images/customer_5.jpg" alt="" />
-          <h3>Zara H.</h3>
-          <span>Glamour Enthusiast</span>
-        </div>
-      </div>
-      <span class="fas fa-quote-right"></span>
-
-      <div class="box">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-        <p>
-          "Faithtistry Lashes delivers on the luxury front with their
-          beautiful lashes, but I think there's an opportunity to elevate the
-          unboxing experience. A more luxurious packaging design could enhance
-          the overall brand image. The great thing is, Faithtistry has shown
-          they are receptive to suggestions, and I believe they'll continue to
-          refine every aspect of their brand."
-        </p>
-        <div class="user">
-          <img src="./images/customer_6.jpg" alt="" />
-          <h3>Mariah Low</h3>
-          <span>Glamour Enthusiast</span>
-        </div>
-      </div>
-      <span class="fas fa-quote-right"></span>
-
-      <div class="box">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-        <p>
-          "While Faithtistry Lashes already offers amazing products, I believe
-          there's room for more diversity in their lash styles. I'd love to
-          see them explore even bolder and trend-setting designs. I appreciate
-          that this brand is open to feedback and am confident they'll
-          continue to evolve and live up to their 'luxury meets lashes'
-          promise."
-        </p>
-        <div class="user">
-          <img src="./images/customer_7.jpg" alt="" />
-          <h3>Lisa R.</h3>
-          <span>Glamour Enthusiast</span>
-        </div>
-      </div>
-      <span class="fas fa-quote-right"></span>
-
-      <div class="box">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-        <p>
-          "I had a minor issue with my order, and the customer service
-          experience was not as seamless as I expected. However, what stood
-          out was how the Faithtistry team actively listened to my concerns
-          and promptly addressed the issue. It's evident they value customer
-          feedback and are committed to improving. Excited to see them uphold
-          their luxury standards in every aspect!"
-        </p>
-        <div class="user">
-          <img src="./images/customer_8.jpg" alt="" />
-          <h3>Jordan W.</h3>
-          <span>Glamour Enthusiast</span>
-        </div>
-      </div>
-      <span class="fas fa-quote-right"></span>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
+    <section class="contact" id="contact">
       <h1 class="heading"><span>Contact </span> Us</h1>
 
       <div class="row">
-          <!-- Feedback and Queries Form -->
-          <form action="https://getform.io/f/c2a17b9c-7f5d-42ca-8b69-659f636d3284" method="POST" id="demo-form">
-              <!-- Honeypot field -->
-              <input type="text" name="_honey" style="display:none">
+        <!-- Feedback and Queries Form -->
+        <form
+          action="https://getform.io/f/c2a17b9c-7f5d-42ca-8b69-659f636d3284"
+          method="POST"
+          id="demo-form"
+        >
+          <!-- Honeypot field -->
+          <input type="text" name="_honey" style="display: none" />
 
-              <!-- Your existing form fields -->
-              <input type="text" name="name" placeholder="Name" class="box" required />
-              <input type="email" name="email" placeholder="Email" class="box" id="email" required />
-              <input type="tel" name="number" placeholder="Phone Number" class="box" required />
-              <textarea name="message" placeholder="Message" cols="30" rows="10" required></textarea>
-              <div>
-                  <label>Gender:</label>
-                  <input type="radio" name="gender" value="male" checked> Male
-                  <input type="radio" name="gender" value="female"> Female
-              </div>
+          <!-- Blacklist field -->
+          <input
+            type="hidden"
+            name="_blacklist"
+            value="spammy pattern, banned term, phrase"
+          />
 
-              <!-- Google reCAPTCHA -->
-              <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY" data-callback="onSubmit"
-                  data-action="submit"></div>
-
-              <!-- select field handle -->
-              <button type="submit" class="btn">Send Message</button>
-          </form>
-          <!-- Image Section -->
-          <div class="image">
-              <img src="./images/faithtistry_help.jpg" alt="Faithtistry Help" />
+          <!-- Your existing form fields -->
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            class="box"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="box"
+            id="email"
+            required
+          />
+          <input
+            type="tel"
+            name="number"
+            placeholder="Phone Number"
+            class="box"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <div>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" checked /> Male
+            <input type="radio" name="gender" value="female" /> Female
           </div>
-      </div>
-      <script>
-          function onSubmit(token) {
-              document.getElementById("demo-form").submit();
-          }
-      </script>
-  </section>
 
+          <!-- Google reCAPTCHA -->
+          <div
+            class="g-recaptcha"
+            data-sitekey="6Lf7njspAAAAAGr7GsC3_A2cWYzbOn1NNdXraMdZ"
+            data-callback="onSubmit"
+            data-action="submit"
+          ></div>
 
-
-
-  
-  <section class="contact join-us" id="contact">
-    <h1 class="heading"><span>Join </span> Us</h1>
-
-    <div class="row">
-      <!-- Feedback and Queries Form -->
-      <form action="https://getform.io/f/c2a17b9c-7f5d-42ca-8b69-659f636d3284" method="POST">
-        <input type="text" name="name" placeholder="Name" class="box" required />
-        <input type="email" name="email" placeholder="Email" class="box" id="email" required />
-        <!-- Change type to "tel" for phone number input -->
-        <input type="tel" name="number" placeholder="Phone Number" class="box" required />
-        <textarea name="message" placeholder="Qualification" cols="30" rows="10" required></textarea>
-        <!-- add hidden Honeypot input to prevent spams -->
-        <input type="hidden" name="_gotcha" style="display:none !important">
-        <div>
-          <label>Gender:</label>
-          <input type="radio" name="gender" value="male" checked> Male
-          <input type="radio" name="gender" value="female"> Female
+          <!-- select field handle -->
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <!-- Image Section -->
+        <div class="image">
+          <img src="./images/faithtistry_help.jpg" alt="Faithtistry Help" />
         </div>
-        <div>
-          <label>Work Experience:</label>
-          <select name="work-experience">
-            <option value="one-year">0-1 years</option>
-            <option value="one-five-years">1-5 years</option>
-          </select>
+      </div>
+    </section>
+
+    <section class="contact join-us" id="contact">
+      <h1 class="heading"><span>Join </span> Us</h1>
+
+      <div class="row">
+        <!-- Feedback and Queries Form -->
+        <form
+          action="https://getform.io/f/c2a17b9c-7f5d-42ca-8b69-659f636d3284"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <input type="text" name="_honey" style="display: none" />
+          <!-- Honeypot field -->
+
+          <!-- Your existing form fields -->
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            class="box"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="box"
+            id="email"
+            required
+          />
+          <input
+            type="tel"
+            name="number"
+            placeholder="Phone Number"
+            class="box"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="About You"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <div>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" checked /> Male
+            <input type="radio" name="gender" value="female" /> Female
+          </div>
+          <div>
+            <label>Work Experience:</label>
+            <select name="work-experience">
+              <option value="one-year">0-1 years</option>
+              <option value="one-five-years">1-5 years</option>
+            </select>
+          </div>
+
+          <!-- File upload -->
+          <input type="file" name="attachment" accept="image/png, image/jpeg" />
+
+          <!-- Google reCAPTCHA -->
+          <div
+            class="g-recaptcha"
+            data-sitekey="6Lf7njspAAAAAGr7GsC3_A2cWYzbOn1NNdXraMdZ"
+            data-callback="onSubmit"
+            data-action="submit"
+          ></div>
+
+          <!-- Select field handle -->
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+      }
+    </script>
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Quick Links</h3>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Products</a>
+          <a href="#">Reviews</a>
+          <a href="#">Contact</a>
         </div>
-        <!-- select field handle -->
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-
-
-  <section class="footer">
-    <div class="box-container">
-      <div class="box">
-        <h3>Quick Links</h3>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Products</a>
-        <a href="#">Reviews</a>
-        <a href="#">Contact</a>
+        <div class="box">
+          <h3>Account</h3>
+          <a href="#">My account</a>
+          <a href="#">My Orders</a>
+          <a href="#">My Favourites</a>
+        </div>
+        <div class="box">
+          <h3>Locations</h3>
+          <a href="#">Singapore</a>
+        </div>
+        <div class="box">
+          <h3>Contact Info</h3>
+          <a href="#">+65 9871-1801</a>
+          <a href="#">Faithtistry@gmail.com</a>
+          <a href="#">Yishun, Singapore - 760736</a>
+          <!-- Replace the image with individual images for each payment type -->
+          <img src="./images/google-pay.png" alt="Google Pay" />
+          <img src="./images/visacard.png" alt="Visa" />
+          <img src="./images/mastercard.png" alt="Mastercard" />
+        </div>
+        <div class="credit">
+          Created by <span>Mr. Isaac Xavier</span> | All rights reserved
+        </div>
       </div>
-      <div class="box">
-        <h3>Account</h3>
-        <a href="#">My account</a>
-        <a href="#">My Orders</a>
-        <a href="#">My Favourites</a>
-      </div>
-      <div class="box">
-        <h3>Locations</h3>
-        <a href="#">Singapore</a>
-      </div>
-      <div class="box">
-        <h3>Contact Info</h3>
-        <a href="#">+65 9871-1801</a>
-        <a href="#">Faithtistry@gmail.com</a>
-        <a href="#">Yishun, Singapore - 760736</a>
-        <!-- Replace the image with individual images for each payment type -->
-        <img src="./images/google-pay.png" alt="Google Pay" />
-        <img src="./images/visacard.png" alt="Visa" />
-        <img src="./images/mastercard.png" alt="Mastercard" />
-      </div>
-      <div class="credit">
-        Created by <span>Mr. Isaac Xavier</span> | All rights reserved
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="./script.js"></script>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
