@@ -657,7 +657,8 @@ form button:hover {
   color: #999;
 }
 
- .contact .row {
+/* Contact section styling */
+.contact .row {
   display: flex;
   flex-wrap: wrap-reverse;
   gap: 1.5rem;
@@ -669,29 +670,29 @@ form button:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   background: #fff;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem; /* Increased border-radius for a softer look */
 }
 
 .contact .row .image {
   flex: 1 1 40rem;
   overflow: hidden;
-  border-radius: 0.5rem; /* Add border-radius for curved border */
+  border-radius: 0.8rem; /* Increased border-radius for a softer look */
 }
 
 .contact .row .image img {
   width: 100%;
-  height: 100%; /* Set height to 100% to make it the same size as the form */
-  object-fit: cover; /* Maintain aspect ratio for the image */
-  border-radius: 0.5rem;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
 }
 
 .contact .row form .box {
-  padding: 1rem;
-  font-size: 1.7rem;
+  padding: 1.5rem; /* Increased padding for better spacing */
+  font-size: 1.6rem; /* Adjusted font size for better readability */
   color: #333;
   text-transform: none;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   margin: 0.7rem 0;
   width: 100%;
 }
@@ -701,12 +702,12 @@ form button:hover {
 }
 
 .contact .row form textarea {
-  height: 10rem;
-  padding: 1rem;
+  height: 12rem; /* Increased height for better user experience */
+  padding: 1.5rem;
   resize: none;
   width: 100%;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   margin: 0.7rem 0;
 }
 
@@ -714,6 +715,7 @@ form button:hover {
   border-color: var(--pink);
 }
 
+/* Join us section styling */
 .join-us .row {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -726,29 +728,29 @@ form button:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   background: #fff;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem; /* Increased border-radius for a softer look */
 }
 
 .join-us .row .image {
   flex: 1 1 40rem;
   overflow: hidden;
-  border-radius: 0.5rem; /* Add border-radius for curved border */
+  border-radius: 0.8rem; /* Increased border-radius for a softer look */
 }
 
 .join-us .row .image img {
   width: 100%;
-  height: 100%; /* Set height to 100% to make it the same size as the form */
-  object-fit: cover; /* Maintain aspect ratio for the image */
-  border-radius: 0.5rem;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
 }
 
 .join-us .row form .box {
-  padding: 1rem;
-  font-size: 1.7rem;
+  padding: 1.5rem; /* Increased padding for better spacing */
+  font-size: 1.6rem; /* Adjusted font size for better readability */
   color: #333;
   text-transform: none;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   margin: 0.7rem 0;
   width: 100%;
 }
@@ -758,18 +760,174 @@ form button:hover {
 }
 
 .join-us .row form textarea {
-  height: 10rem;
-  padding: 1rem;
+  height: 12rem; /* Increased height for better user experience */
+  padding: 1.5rem;
   resize: none;
   width: 100%;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   margin: 0.7rem 0;
 }
 
 .join-us .row form textarea:focus {
   border-color: var(--pink);
 }
+
+
+/* Booking section styling */
+.booking {
+  padding: 2rem 10%;
+  background-color: #ffffff; /* Light background color */
+}
+
+/* Booking heading styles */
+.booking .heading {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #333;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  background: rgba(225, 51, 153, 0.1);
+  border-radius: 1rem;
+}
+
+.booking .heading span {
+  color: var(--pink);
+}
+
+/* Booking form styles */
+.booking form {
+  text-align: center;
+}
+
+.booking form label {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.booking form input,
+.booking form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 0.1rem solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.8rem;
+  font-size: 1.3rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.booking form input::placeholder,
+.booking form select::placeholder {
+  color: #555;
+}
+
+.booking form input:focus,
+.booking form select:focus {
+  border-color: var(--pink);
+  color: var(--pink); /* Change text color on focus */
+}
+
+/* Booking button styles */
+.booking form button {
+  width: 100%;
+  padding: 12px;
+  border: 0.1rem solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.8rem;
+  font-size: 1.3rem;
+  color: #555;
+  background: #fff;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.booking form button:hover {
+  color: #fff;
+  background: var(--pink);
+}
+
+/* Responsive styling */
+@media (max-width: 991px) {
+  .booking {
+    padding: 2rem;
+  }
+
+  .booking .heading {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .booking .heading {
+    font-size: 2.5rem;
+  }
+
+  .booking form input,
+  .booking form select {
+    font-size: 1.2rem;
+  }
+
+  .booking form button {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .booking .heading {
+    font-size: 2.2rem;
+  }
+
+  .booking form input,
+  .booking form select {
+    font-size: 1.1rem;
+  }
+
+  .booking form button {
+    font-size: 1.3rem;
+  }
+}
+
+
+/* Contact section styling */
+.contact .row form .box::placeholder {
+  color: #999; /* Placeholder text color */
+}
+
+.contact .row form .box:focus::placeholder {
+  color: var(--pink); /* Placeholder text color on focus */
+}
+
+.contact .row form textarea::placeholder {
+  color: #999; /* Placeholder text color */
+}
+
+.contact .row form textarea:focus::placeholder {
+  color: var(--pink); /* Placeholder text color on focus */
+}
+
+/* Join us section styling */
+.join-us .row form .box::placeholder {
+  color: #999; /* Placeholder text color */
+}
+
+.join-us .row form .box:focus::placeholder {
+  color: var(--pink); /* Placeholder text color on focus */
+}
+
+.join-us .row form textarea::placeholder {
+  color: #999; /* Placeholder text color */
+}
+
+.join-us .row form textarea:focus::placeholder {
+  color: var(--pink); /* Placeholder text color on focus */
+}
+
+
+
+
+
+
+
 
 
 .footer .box-container {

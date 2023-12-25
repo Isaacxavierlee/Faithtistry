@@ -687,6 +687,70 @@
       }
     </script>
 
+    <section class="booking" id="booking">
+      <h1 class="heading"><span>Book </span> Appointment</h1>
+
+      <div class="row">
+        <form action="process_booking.php" method="POST">
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            class="box"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="box"
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            class="box"
+            required
+          />
+
+          <label for="preferredDate">Preferred Date:</label>
+          <input type="date" name="preferredDate" required />
+
+          <label for="preferredTime">Preferred Time:</label>
+          <select name="preferredTime" id="preferredTime" required>
+            <!-- Add time slots from 9 am to 5 pm with a limit of 5 slots for each timing -->
+            <!-- You can customize the time slots as needed -->
+            <option value="09:00">9:00 AM</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="13:00">13:00 AM</option>
+            <option value="13:30">13:30 AM</option>
+            <option value="15:00">15:00 AM</option>
+            <option value="16:00">16:00 AM</option>
+            <!-- Repeat for other timings -->
+          </select>
+
+          <label for="lashService">Select Lash Service:</label>
+          <select name="lashService" id="lashService" required>
+            <!-- Dynamically generate options for lash services -->
+            <option value="4D Lashes">4Dimensional Lashes</option>
+            <option value="Classic Lashes">Classic Lashes</option>
+            <option value="Volume Lashes">Volume Lashes</option>
+            <option value="Hybrid Lashes">Hybrid Lashes</option>
+            <option value="Lash Lift & Tint">Lash Lift & Tint</option>
+            <option value="Mega Volume Lashes">Mega Volume Lashes</option>
+            <option value="Colored Lashes">Colored Lashes</option>
+            <option value="Bottom Lashes">Bottom Lashes</option>
+            <!-- Add more options for other lash services -->
+          </select>
+
+          <!-- Add more fields as needed -->
+
+          <button type="submit" class="btn">Book Now</button>
+        </form>
+      </div>
+    </section>
+
     <section class="footer">
       <div class="box-container">
         <div class="box">
