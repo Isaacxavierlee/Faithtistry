@@ -1,0 +1,163 @@
+/* login.css */
+
+@import url("http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: url(./images/loginphp.jpg) center/cover no-repeat fixed;
+}
+
+.wrapper {
+  position: relative;
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #e84393;
+  border-radius: 10px;
+  padding: 80px 40px 30px;
+  /* Adjusted padding to create space at the top */
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  width: 200px;
+  /* Adjust the size as needed */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  /* Added to use Flexbox */
+  align-items: center;
+  /* Center vertically */
+}
+
+.input-box input {
+  flex: 1;
+  /* Takes remaining space in the container */
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  color: #000000;
+  padding-left: 20px;
+  /* Add padding for text */
+}
+
+.input-box input::placeholder {
+  color: #e84393;
+}
+
+.input-box .icon {
+  font-size: 18px;
+  margin-right: 10px;
+  /* Spacing between icon and input */
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: #e84393;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #e84393;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  /* Add a transition effect */
+}
+
+.wrapper .btn:hover {
+  background-color: #50c3ac;
+  /* Change the background color on hover */
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-link p a {
+  color: #858080;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 80%;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 90%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    width: 95%;
+    padding: 20px;
+  }
+}
