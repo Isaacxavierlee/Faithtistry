@@ -796,8 +796,12 @@ form button:hover {
 }
 
 /* Booking form styles */
+/* Booking form styles */
 .booking form {
   text-align: center;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1); /* Add border */
+  border-radius: 0.8rem; /* Add border-radius for a rounded look */
+  padding: 2rem; /* Adjust padding for better spacing */
 }
 
 .booking form label {
@@ -806,6 +810,7 @@ form button:hover {
   font-size: 1.2rem;
   color: #555;
 }
+
 
 .booking form input,
 .booking form select {
@@ -855,6 +860,15 @@ form button:hover {
   .booking .heading {
     font-size: 3rem;
   }
+
+  .booking form input,
+  .booking form select {
+    font-size: 1.2rem;
+  }
+
+  .booking form button {
+    font-size: 1.4rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -864,11 +878,11 @@ form button:hover {
 
   .booking form input,
   .booking form select {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .booking form button {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -886,6 +900,7 @@ form button:hover {
     font-size: 1.3rem;
   }
 }
+
 
 
 /* Contact section styling */
@@ -923,13 +938,6 @@ form button:hover {
 }
 
 
-
-
-
-
-
-
-
 /* Footer section styling */
 .footer {
   background-color: #222;
@@ -947,7 +955,6 @@ form button:hover {
 .box {
   flex: 1 1 calc(25% - 2rem);
   padding: 2rem;
-  background-color: #333; /* Darker background color for boxes */
   border-radius: 1rem; /* Rounded corners for boxes */
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* Add box shadow */
 }
