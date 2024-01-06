@@ -937,28 +937,28 @@ form button:hover {
   padding: 3rem 0;
 }
 
-.footer .box-container {
+.box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center; /* Center the boxes horizontally */
+  justify-content: space-around;
 }
 
-.footer .box-container .box {
-  flex: 1 1 25rem;
+.box {
+  flex: 1 1 calc(25% - 2rem);
   padding: 2rem;
   background-color: #333; /* Darker background color for boxes */
   border-radius: 1rem; /* Rounded corners for boxes */
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* Add box shadow */
 }
 
-.footer .box-container .box h3 {
+.box h3 {
   color: var(--pink);
   font-size: 2.5rem;
   padding: 1rem 0;
 }
 
-.footer .box-container .box a {
+.box a {
   display: block;
   color: #bbb;
   font-size: 1.5rem;
@@ -967,11 +967,11 @@ form button:hover {
   transition: color 0.3s ease;
 }
 
-.footer .box-container .box a:hover {
+.box a:hover {
   color: #fff;
 }
 
-.footer .box-container .box img {
+.box img {
   margin-top: 1rem;
   width: 50px;
   height: auto;
@@ -979,18 +979,23 @@ form button:hover {
   transition: transform 0.3s ease;
 }
 
-.footer .box-container .box img:hover {
+.box img:hover {
   transform: scale(1.1);
 }
 
-.footer .credit {
+.credit {
   text-align: center;
   padding: 2rem 0;
   margin-top: 2rem;
   font-size: 1.8rem;
   border-top: 0.1rem solid rgba(255, 255, 255, 0.1); /* Light border on top */
-}
-
-.footer .credit span {
   color: var(--pink);
 }
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .box {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
